@@ -8,7 +8,15 @@ module.exports = {
     "./**/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        mt_thin: ["mrt-thin"],
+        mt_mid: ["mrt-mid"],
+        mt_semi: ["mrt-semi"],
+        mt_bold: ["mrt-bold"],
+        mt_xbold: ["mrt-xbold"],
+      },
+    },
   },
   plugins: [],
 };
