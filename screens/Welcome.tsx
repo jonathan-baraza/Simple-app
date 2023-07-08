@@ -3,8 +3,8 @@ import React from "react";
 
 const Welcome = () => {
   return (
-    <View style={styles.container} className="flex-1 p-6">
-      <Text className="font-bold text-5xl">
+    <View className="flex-1 p-6" style={styles.container}>
+      <Text className="font-mt_bold text-4xl">
         Welcome to Msaidika Mobile Application.
       </Text>
       <Text>
@@ -21,7 +21,6 @@ const Welcome = () => {
 const styles = StyleSheet.create({
   container: {
     marginTop: StatusBar.currentHeight || 0,
-    fontFamily: "arial",
   },
 });
 export default Welcome;
