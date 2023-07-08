@@ -15,15 +15,23 @@ const Register = () => {
   const [passwordVisible, setPasswordVisible] = useState<boolean>(false);
   const [password2Visible, setPassword2Visible] = useState<boolean>(false);
   return (
-    <ScrollView className="flex-1  " style={styles.container}>
+    <ScrollView
+      className="flex-1  "
+      contentContainerStyle={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        height: "100%",
+      }}
+    >
       <LinearGradient
         start={{ x: 0, y: 0.5 }}
         end={{ x: 0.4, y: 0.5 }}
         className="flex-1"
         colors={["#e3e8f1", "#ffff"]}
       >
-        <View className="flex-1 py-6 m-0 flex-col space-y-16">
-          <View className="px-6 ">
+        <View className="flex-1 py-6 m-0 flex-col ">
+          <View className="px-6 " style={styles.container}>
             <Text className="font-mt_bold text-2xl mt-4 leading-10">
               Create an Account
             </Text>
