@@ -19,7 +19,7 @@ const Welcome = () => {
           Welcome to Msaidika Mobile Application.
         </Text>
         <Text
-          style={{ lineHeight: 22 }}
+          style={{ lineHeight: 22, fontSize: 12 }}
           className="font-mt_mid mt-8 text-xm text-gray-400"
         >
           Simplify local life with M-Saidika. Order, connect, and thrive
@@ -49,7 +49,7 @@ const Welcome = () => {
           </View>
         </TouchableOpacity>
         <View className="mt-6 flex flex-row item-center justify-center">
-          <Text>I already have an account.</Text>
+          <Text className="text-gray-500">I already have an account.</Text>
           <TouchableOpacity>
             <Text className="text-[#007acc] font-bold ml-1">Login</Text>
           </TouchableOpacity>
