@@ -15,22 +15,15 @@ const Register = () => {
   const [passwordVisible, setPasswordVisible] = useState<boolean>(false);
   const [password2Visible, setPassword2Visible] = useState<boolean>(false);
   return (
-    <ScrollView
-      className="flex-1  "
-      contentContainerStyle={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-between",
-        height: "100%",
-      }}
-    >
+    <ScrollView className="flex-1  ">
       <LinearGradient
         start={{ x: 0, y: 0.5 }}
         end={{ x: 0.4, y: 0.5 }}
         className="flex-1"
         colors={["#e3e8f1", "#ffff"]}
       >
-        <View className="flex-1 py-6 m-0 flex-col ">
+        <View className="w-full flex-1  space-y-16 py-6 m-0">
+          {/* Header */}
           <View className="px-6 " style={styles.container}>
             <Text className="font-mt_bold text-2xl mt-4 leading-10">
               Create an Account
@@ -42,7 +35,7 @@ const Register = () => {
               Step into a world of limitless possibilities.
             </Text>
           </View>
-
+          {/* Inputs */}
           <View className="w-full mt-8 space-y-3 px-6 flex-1">
             <View className="flex flex-row items-center w-full bg-[#f4f4f4] rounded-lg p-3">
               <View className="w-[35px] flex items-center justify-center">
@@ -124,6 +117,7 @@ const Register = () => {
               </TouchableOpacity>
             </View>
           </View>
+          {/* Footer part */}
           <View className="w-full px-6">
             <TouchableOpacity
               activeOpacity={0.5}

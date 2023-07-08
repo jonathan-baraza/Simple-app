@@ -38,8 +38,8 @@ export default function App() {
   return (
     <View className="flex-1" onLayout={handleOnLayout}>
       {/* <Welcome /> */}
-      {/* <Register /> */}
-      <Login />
+      <Register />
+      {/* <Login /> */}
     </View>
   );
 }
