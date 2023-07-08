@@ -46,6 +46,10 @@ const Welcome = () => {
             source={require("../assets/google.png")}
           />
         </View>
+        <View className="mt-6 flex flex-row item-center justify-center">
+          <Text>I already have an account.</Text>
+          <Text className="text-[#007acc] font-bold ml-1">Login</Text>
+        </View>
       </View>
     </View>
   );
