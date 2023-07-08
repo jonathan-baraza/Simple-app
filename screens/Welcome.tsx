@@ -39,16 +39,20 @@ const Welcome = () => {
           <Text className="text-gray-400 mx-4">or Sign up with</Text>
           <View className="h-[1px] bg-gray-300 flex-1"></View>
         </View>
-        <View className="rounded-full w-[50px] mx-auto border border-gray-300 h-[50px] p-2 flex items-center justify-center">
-          <Image
-            resizeMode="contain"
-            className="w-full"
-            source={require("../assets/google.png")}
-          />
-        </View>
+        <TouchableOpacity>
+          <View className="rounded-full w-[50px] mx-auto border border-gray-300 h-[50px] p-2 flex items-center justify-center">
+            <Image
+              resizeMode="contain"
+              className="w-full"
+              source={require("../assets/google.png")}
+            />
+          </View>
+        </TouchableOpacity>
         <View className="mt-6 flex flex-row item-center justify-center">
           <Text>I already have an account.</Text>
-          <Text className="text-[#007acc] font-bold ml-1">Login</Text>
+          <TouchableOpacity>
+            <Text className="text-[#007acc] font-bold ml-1">Login</Text>
+          </TouchableOpacity>
         </View>
       </View>
     </View>
