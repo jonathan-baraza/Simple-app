@@ -7,7 +7,7 @@ const Welcome = () => {
       <Text className="font-mt_bold text-4xl">
         Welcome to Msaidika Mobile Application.
       </Text>
-      <Text>
+      <Text className="font-mt_semi mt-4 text-gray-400">
         Discover, connect, and thrive with M-Saidika. Simplify your local life
         and tap into a world of convenience. Order food, book transportation,
         find jobs and houses effortlessly. Access emergency services and connect
