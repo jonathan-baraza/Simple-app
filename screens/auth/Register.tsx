@@ -11,6 +11,8 @@ import { useState } from "react";
 import { Ionicons, FontAwesome } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
 const Register = () => {
+  const [passwordVisible, setPasswordVisible] = useState<boolean>(false);
+  const [password2Visible, setPassword2Visible] = useState<boolean>(false);
   return (
     <LinearGradient
       start={{ x: 0, y: 0.5 }}
@@ -64,13 +66,16 @@ const Register = () => {
             <TextInput
               className="flex-1 ml-2"
               inputMode="text"
-              secureTextEntry={true}
+              secureTextEntry={!passwordVisible}
               placeholder="Set your password"
             />
-            <TouchableOpacity className="w-[35px] flex items-center justify-center">
+            <TouchableOpacity
+              onPress={() => setPasswordVisible(!passwordVisible)}
+              className="w-[35px] flex items-center justify-center"
+            >
               <Ionicons
                 className=""
-                name="eye-sharp"
+                name={`${passwordVisible ? "eye-off-sharp" : "eye-sharp"}`}
                 size={25}
                 color="#989898"
               />
@@ -83,13 +88,16 @@ const Register = () => {
             <TextInput
               className="flex-1 ml-2"
               inputMode="text"
-              secureTextEntry={true}
+              secureTextEntry={!password2Visible}
               placeholder="Confirm your password"
             />
-            <TouchableOpacity className="w-[35px] flex items-center justify-center">
+            <TouchableOpacity
+              onPress={() => setPassword2Visible(!password2Visible)}
+              className="w-[35px] flex items-center justify-center"
+            >
               <Ionicons
                 className=""
-                name="eye-sharp"
+                name={`${password2Visible ? "eye-off-sharp" : "eye-sharp"}`}
                 size={25}
                 color="#989898"
               />
