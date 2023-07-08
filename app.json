@@ -7,8 +7,8 @@
     "icon": "./assets/appIcon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splashscreen2.png",
-      "resizeMode": "center",
+      "image": "./assets/splashscreen.png",
+      "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "assetBundlePatterns": ["**/*"],
