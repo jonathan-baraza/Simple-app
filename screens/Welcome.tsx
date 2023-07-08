@@ -4,6 +4,7 @@ import {
   StyleSheet,
   StatusBar,
   TouchableOpacity,
+  Image,
 } from "react-native";
 import React from "react";
 
@@ -33,6 +34,18 @@ const Welcome = () => {
         >
           <Text className="text-white">Create an Account</Text>
         </TouchableOpacity>
+        <View className="flex my-6 flex-row items-center justify-between">
+          <View className="h-[1px] bg-gray-300 flex-1"></View>
+          <Text className="text-gray-400 mx-4">or Sign up with</Text>
+          <View className="h-[1px] bg-gray-300 flex-1"></View>
+        </View>
+        <View className="rounded-full w-[50px] mx-auto border border-gray-300 h-[50px] p-2 flex items-center justify-center">
+          <Image
+            resizeMode="contain"
+            className="w-full"
+            source={require("../assets/google.png")}
+          />
+        </View>
       </View>
     </View>
   );
