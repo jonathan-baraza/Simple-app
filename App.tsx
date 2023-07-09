@@ -8,6 +8,7 @@ import Welcome from "./screens/Welcome";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import Login from "./screens/auth/Login";
+import Home from "./screens/Home";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -38,8 +39,9 @@ export default function App() {
   return (
     <View className="flex-1" onLayout={handleOnLayout}>
       {/* <Welcome /> */}
-      <Register />
+      {/* <Register /> */}
       {/* <Login /> */}
+      <Home />
     </View>
   );
 }
