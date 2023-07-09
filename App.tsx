@@ -8,7 +8,7 @@ import Welcome from "./screens/Welcome";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import Login from "./screens/auth/Login";
-import Home from "./screens/Home";
+import HomeLayout from "./screens/HomeLayout";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -41,7 +41,7 @@ export default function App() {
       {/* <Welcome /> */}
       {/* <Register /> */}
       {/* <Login /> */}
-      <Home />
+      <HomeLayout />
     </View>
   );
 }
